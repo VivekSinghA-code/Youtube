@@ -38,7 +38,7 @@ public class TestCases extends ExcelDataProvider { // Lets us read the data
          * instructions
          */
         @Test(alwaysRun = true, enabled = true)
-        public static void testCase01() throws InterruptedException {
+        public void testCase01() throws InterruptedException {
                 System.out.println("Start the testCase01");
                 driver.get("https://www.youtube.com/");
 
@@ -81,7 +81,7 @@ public class TestCases extends ExcelDataProvider { // Lets us read the data
         }
 
         @Test(alwaysRun = true, enabled = true)
-        public static void testCase02() throws InterruptedException {
+        public void testCase02() throws InterruptedException {
                 System.out.println("Start the testCase02");
                 driver.get("https://www.youtube.com/");
 
@@ -150,7 +150,7 @@ public class TestCases extends ExcelDataProvider { // Lets us read the data
         }
 
         @Test(alwaysRun = true, enabled = true)
-        public static void testCase03() throws InterruptedException {
+        public void testCase03() throws InterruptedException {
                 System.out.println("Start the testCase03");
                 driver.get("https://www.youtube.com/");
 
@@ -209,7 +209,7 @@ public class TestCases extends ExcelDataProvider { // Lets us read the data
         }
 
         @Test(alwaysRun = true, enabled = true)
-        public static void testCase04() throws InterruptedException {
+        public void testCase04() throws InterruptedException {
                 System.out.println("Start the testCase04");
                 driver.get("https://www.youtube.com/");
 
@@ -314,7 +314,7 @@ public class TestCases extends ExcelDataProvider { // Lets us read the data
         }
 
 @Test(alwaysRun = true, enabled = true, dataProvider = "excelData", dataProviderClass = ExcelDataProvider.class)
-        public static void testCase05(String fileName) throws InterruptedException {
+        public void testCase05(String fileName) throws InterruptedException {
                 System.out.println("Start the testCase05");
                 driver.get("https://www.youtube.com/");
 
@@ -322,7 +322,12 @@ public class TestCases extends ExcelDataProvider { // Lets us read the data
                 // int totalViews = 0;
 
                 // WebElement serachBoxElement = driver.findElement(By.xpath("//input[contains(@id = 'search')]"));
-
+                // serachBoxElement.sendKeys("Movies");
+                // serachBoxElement.clear();
+                // serachBoxElement.sendKeys("Music");
+                // serachBoxElement.clear();
+                // serachBoxElement.sendKeys("Games");
+                // serachBoxElement.clear();
                 // Thread.sleep(10000);
 
                 // serachBoxElement.sendKeys(fileName);
